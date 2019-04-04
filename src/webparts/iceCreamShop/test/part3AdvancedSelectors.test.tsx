@@ -40,7 +40,7 @@ describe('Advanced selectors', () => {
       // use JavaScript querySelectorAll to find nodes that contain text
       const flavours = componentAsDOM.querySelectorAll("[data-automationid*='item-']");
 
-      expect(flavours.length).toBe(4);
+      expect(flavours.length).toBe(3);
   }); 
 });
 // Usefull links:
