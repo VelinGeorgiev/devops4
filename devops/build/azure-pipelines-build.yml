@@ -23,7 +23,6 @@ steps:
 
 - script: |
     gulp bundle --ship
-    gulp package-solution --ship
   displayName: 'Build the solution'
 
 - script: |
