@@ -69,7 +69,7 @@ describe('Sinon basic spy', () => {
         // lets try to find in in the component
         const buyForm = reactComponent.find("#buyForm");
 
-        expect(selectHandlerSpy.lastCall.args[0].UniqueId).toBe('1'); 
+        expect(selectHandlerSpy.lastCall.args[0].UniqueId).toBe('2'); 
         expect(selectHandlerSpy.lastCall.args[0].Title).toBe('Cherry'); 
         expect(selectHandlerSpy.lastCall.args[0].Price).toBe(1); 
     });
