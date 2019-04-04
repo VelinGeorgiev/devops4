@@ -22,14 +22,17 @@ steps:
   displayName: 'Run npm install'
 
 - script: |
-    npm test
-  displayName: 'Run npm test'
-
-- script: |
-    gulp clean
     gulp bundle --ship
     gulp package-solution --ship
-  displayName: 'Build and package the solution'
+  displayName: 'Build the solution'
+
+- script: |
+    npm test
+  displayName: 'Run npm test (Jest)'
+
+- script: |
+    gulp package-solution --ship
+  displayName: 'Package the solution'
 
 # Publish Build Artifacts SPFx sppkg
 - task: PublishBuildArtifacts@1
