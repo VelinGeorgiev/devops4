@@ -45,6 +45,10 @@ jobs:
       displayName: 'Install Node.js'
 
     - script: |
+        npm install
+      displayName: 'Run npm install'
+
+    - script: |
         npm test
       displayName: 'Run npm test (Jest)'
     
